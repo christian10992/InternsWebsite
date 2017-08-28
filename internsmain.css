@@ -1,3 +1,4 @@
+/*########## Defaults ##########*/
 html {
     min-height: 100%;
     min-width: 100%;
@@ -6,9 +7,9 @@ html {
     background: 
     linear-gradient(
       rgba(0, 0, 0, 0), 
-      rgba(0, 0, 0, 0.1)
+      rgba(25, 0, 25, 0.7)
     ),
-        url("contact_background.jpg");
+        url("https://i.imgur.com/6MEteNz.jpg");
     position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,38 +23,8 @@ html {
     margin: auto;
 }
 
-/*########## Page Text ##########*/
-
-.bodyText {
-    position: fixed;
-    width: 40%;
-    height: auto;
-    margin-left: 27%;
-    padding-left: 5%;
-    margin-top:  12%;
-    padding-right: 5%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, .65)
-}
-
-.bodyText p {
-    color: white;
-    font-family: 'Vollkorn', serif;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    line-height: 200%;
-}
-
-.inlineLinks {
-    text-decoration: none;
-    color: darkseagreen;
-}
-
 /*########## Social media icons ##########*/
 img {
-    max-width: 100%;
-    height: auto;
     padding 5px;
     opacity: 0.9;
     margin-bottom: auto;
@@ -103,19 +74,57 @@ img {
     float: left;
 }
 
+/*########## Overlay text ##########*/
+.textOverlay {
+    height: 50%;
+    width: 110%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 17%;
+    justify-content: center;
+}
+
+.textOverlay p {
+    font-size:6vw;
+    color: ghostwhite;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 124px;
+    animation: fadeIn 6s;
+}
+
+/*########## Text overlay fade-in ##########*/
+@keyframes fadeIn {
+    from {opacity: 0;
+    }
+    to {opacity: 1;   
+    }
+}
+
+/*########## Bandcamp Player ##########*/
+.musicPlayer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 7%;
+    margin-right: 1.5%;
+}
+
 /*########## Nav bar ##########*/
 nav {
     width: 100%;
-    position: fixed;
     margin: 0;
+    position: fixed;
+    left: 0;    
     bottom: 0;
-    left: 0;
     margin-bottom: 2%;
 }
 
 nav ul {
-    background-color: black;
-    opacity: .5;
+    background-color: dimgray;
+    opacity: .6;
     overflow: hidden;
     margin: 0;
     padding: 1;
@@ -137,7 +146,7 @@ ul.navbar li a {
 }
 
 ul.navbar li a:hover {
-    background-color: #9AABC5;
+    background-color: #f2d9e6;
     color: black;
 }
 
@@ -146,9 +155,9 @@ ul.navbar li.dropdownIcon {
 }
 
 /*########## Mobile ##########*/
-@media screen and (max-width: 780px) {
-    
+@media screen and (max-width: 80px) { 
 /*Nav bar*/
+
 ul.navbar li {
         display: none;
     }
