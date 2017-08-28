@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Interns</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        <link rel="stylesheet" href="internsmain.css">
+    </head>
+    
+    <body>
+<!--Social media icon links-->     
+        <div class="container" id="mediaButtons">
+        <div class="row">
+            <div class="col-3">
+            <a href="https://open.spotify.com/artist/2qfYsFlNs8A7ZYUPVckYVR" target="_blank"><img SRC="spotify.png" class="linkImg"></a>
+            </div>
+            <div class="col-3">
+            <a href="https://www.facebook.com/internsatx/" target="_blank"><img SRC="facebook.png" class="linkImg"></a>
+            </div>
+            <div class="col-3">
+            <a href="https://internsatx.bandcamp.com/" target="_blank"><img SRC="bandcamp.png" class="linkImg"></a>
+            </div>
+            <div class="col-3">
+            <a href="https://soundcloud.com/internsatx"><img SRC="soundcloud.jpg" class="linkImg" target="_blank"></a>
+            </div>
+        </div>
+        </div>
+        
+<!--Text fade in-->
+        <div class="container" id="fadeText">
+            <div class="textOverlay">
+                <p>interns</p>
+            </div>
+        </div>
+        
+<!--Bancamp player-->
+        <div class="container" id="bandCamp">
+            <div class="musicPlayer">
+            <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=360092081/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=none/transparent=true/" seamless><a href="http://internsatx.bandcamp.com/album/calotype">Calotype by Interns</a></iframe>
+            </div>
+        </div>
+
+<!--Navigation bar-->
+        <div class="container" id="navigation">
+            <nav>
+            <ul class="navbar" id="dropdownClick">
+                <li> <a href="epk.html">EPK</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="news.html">News</a></li>
+                <li class=dropdownIcon><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+             </ul>
+            </nav>
+        </div>
+        
+<!--Dropdown menu for mobile-->
+            <script>
+                function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                    /*change navbar to navbar.responsive*/
+            } else {
+                x.className = "navbar";
+            }
+            }
+            </script>
+    </body>
+</html>
